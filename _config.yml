@@ -1,25 +1,44 @@
 # GitHub defaults that can be overridden
+# here for reference
 # highlighter: pygments
 # github: [Repository metadata]
 # # https://help.github.com/articles/repository-metadata-on-github-pages/
 
 # GitHub defaults that can not be overridden
-# safe: true
-# lsi: false
+# here for use while running locally
+safe: true
+lsi: false
 # source: your top-level directory
 
-# BELOW ARE DEFAULTS FROM 'jekyll new' COMMAND
+# MY SETTINGS
+
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Mike Camilleri
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+  Mike Camilleri's personal website. Here he maintains a portfolio and blog
+url: "http://mikecamilleri.com"
 
 # Build settings
-markdown: kramdown
+timezone: US/Pacific
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "CNAME"]
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "no_intra_emphasis", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+highlighter: pygments
+
+permalink: "/blog/:title/"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
