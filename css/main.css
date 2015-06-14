@@ -1,0 +1,174 @@
+/* main.css */
+
+/**
+ * The following code block is minified normalize.css. The following license
+ * notice was include with the original:
+ *   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
+ **/
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/* --------------------------------------------------------------------------
+    MIKECAMILLERI.COM  /////////////////////////////////////////////////////
+   --------------------------------------------------------------------------
+    
+    COLOR:
+    -  Primary:        #00aef0
+    -  Black:          #000000  (20%)
+    -  Grey:           #a8a8a8  (66%)
+                       #e6e6e6  (90%)
+    -  White:          #ffffff  (100%)
+
+    FONTS:
+    -  Face:           Open Sans 300, 600; Ubuntu Mono 400
+    -  line-height:    1.75em
+  
+  SCALE:
+  base font-size (%) >  0.75%  87.5%  100%   112.5%  lines               use
+                  (em)    (px)                        (x) (rem)  (em)
+  0)   0.5     = 0.5      6      7      8      9     1 = 1.75 = 3.5   
+  1)   1       = 1      *12    *14    *16    *18     1 = 1.75 = 1.75    <body>
+  2)   1 + 0.5 = 1.5     18     21     24     27     1 = 1.75 = 1.1667  <h1>
+  3)   1.5 + 1 = 2.5     30     35     40     45     2 = 3.5  = 1.4     
+   
+   -------------------------------------------------------------------------- */
+
+/* BIG BLOCKS */
+
+body {
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  border-top: 0.5em solid #00aef0;
+}
+
+.site-wrapper {
+  /* flexible on small devices, reasonable line lenght on large devices */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  max-width: 40em;
+}
+
+header { }
+
+footer {
+  margin-top: 1.5em;
+  margin-bottom: 9em;
+  padding-top: 1.5em;
+  border-top: 1px solid #e6e6e6;
+}
+
+
+/* TYPOGRAPHY */
+
+/* additional resets */
+
+abbr[title] {
+  border-bottom-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* base block elements */
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 3.5em; /* 3 lines */
+  margin-bottom: 1em; /* 1 line */
+  font-size: 1.5em;
+}
+
+h2, h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+h3 {
+  font-weight: inherit;
+  font-style: italic;
+}
+
+p, pre {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  padding: 0;
+}
+
+li { }
+
+/* base incline elements */
+
+a {
+  text-decoration: none;
+  color: #00aef0;
+  font-weight: 600;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+code {
+  font-family: "Ubuntu Mono";
+  font-weight: 400;
+}
+
+
+/* POST & PAGE SPECIFIC */
+
+.meta {
+  color: #a8a8a8;
+}
+
+address a {
+  color: inherit;
+  font-weight: inherit;
+}
+
+
+/* HOME SPECIFIC */
+
+.home {
+  background-color: #00aef0;
+  color: #ffffff;
+}
+
+.home a {
+  color: inherit;
+  font-weight: 600;
+}
+
+
+/* BLOG INDEX SPECIFIC */
+
+.posts li {
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+

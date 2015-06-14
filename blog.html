@@ -3,12 +3,10 @@ title: Blog
 permalink: /blog/
 ---
 
-<ul>
+<p>The is where I will keep a blog. Coming soon.</p>
+
+<ol class="posts">
   {% for post in site.posts %}
-    <li>
-      <h2>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
-    </li>
+  	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
-</ul>
+</ol>

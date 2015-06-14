@@ -7,8 +7,10 @@ layout: default
         </header>
         {{ content }}
         <footer>
-          <address>
+          <address class="meta">
             <a rel="author" href="/"><abbr title="Michael Camilleri">Mike Camilleri</abbr></a>
           </address>
-          <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+          <div class="meta">
+            <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+          </div>
         </footer>
