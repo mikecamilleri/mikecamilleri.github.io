@@ -24,7 +24,7 @@ exclude: ["Gemfile", "Gemfile.lock", "README.md", "CNAME"]
 
 markdown: redcarpet
 redcarpet:
-  extensions: ["tables", "no_intra_emphasis", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+  extensions: ["smart", "tables", "no_intra_emphasis", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
 highlighter: pygments
 
 permalink: "/blog/:title/"
