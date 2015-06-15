@@ -3,7 +3,7 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-Welcome to my portfolio. For now, most of this portfolio contains mostly coursework from my time in the Computer Science program at Oregon State University. I havn't had time to add everything yet, but it will expand over the next week or so. Each item below links to a GitHub repository with containing code and more documentation. Also check out <a rel="me" href="https://github.com/mikecamilleri">my full profile on GitHub</a>.
+Welcome to my portfolio. For now, this portfolio contains mostly coursework from my time in the Computer Science program at Oregon State University. I haven't had time to add everything yet, but it will expand over the next week or so. Each item below links to a GitHub repository with containing code and more documentation. Also check out <a rel="me" href="https://github.com/mikecamilleri">my full profile on GitHub</a>.
 
 ## [mikecamilleri.com (mikecamilleri.github.io)](https://github.com/mikecamilleri/mikecamilleri.github.io)
 
