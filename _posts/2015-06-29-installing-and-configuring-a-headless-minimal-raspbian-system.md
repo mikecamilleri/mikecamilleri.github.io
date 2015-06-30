@@ -5,11 +5,11 @@ date: 2015-06-29
 
 Now that I'm done with college degree number three. I have time to pursue some project ideas that have been accumulating. The [Raspberry Pi](https://www.raspberrypi.org) represents a pretty sweet platform for several of those projects. [Raspbian](https://www.raspbian.org) is based on Debian Linux and is the standard operating system for the Raspberry Pi. The Raspberry Pi was initially developed as an educational tool, and as such, the Raspbian image and installer provided by the [Raspberry Pi Foundation](https://www.raspberrypi.org) both result in a system with much more stuff (e.g. a full desktop environment) than I need or want for my embedded projects. The most recent official image, as of the time of writing, is a whopping 3.28 GiB.
 
-In this tutorial I discuss using [_Raspbian (minimal) unattended netinstaller_ (`raspbian-ua-netinst`)](https://github.com/debian-pi/raspbian-ua-netinst) to install a minimal Raspbian system on a headless Raspberry Pi.
+In this tutorial I discuss using [_Raspbian (minimal) unattended netinstaller_ (raspbian-ua-netinst)](https://github.com/debian-pi/raspbian-ua-netinst) to install a minimal Raspbian system on a headless Raspberry Pi.
 
 There are other ways to get a minimal system set up, including using the [interactive installer](https://www.raspbian.org/RaspbianInstaller) available from Raspbian, or an image that someone else has made such as [MINIBIAN](https://minibianpi.wordpress.com). My reasons for doing it this way are:
 
-1. I don't own a TV or computer monitor with HDMI, nor do I own a USB keyboard so I can't use any sort of interactive installer. `raspbian-ua-netinst` allows for completely unattended installation and will even set up the root account, SSH access, and networking for post-install access.
+1. I don't own a TV or computer monitor with HDMI, nor do I own a USB keyboard so I can't use any sort of interactive installer. _raspbian-ua-netinst_ allows for completely unattended installation and will even set up the root account, SSH access, and networking for post-install access.
 2. Although MINIBIAN looks pretty close to what I need, it might not be exactly, and the documentation isn't the best.
 3. By doing it myself, I will develop a more thorough understanding of the system upon which I will be building projects.
 
@@ -17,7 +17,7 @@ There are other ways to get a minimal system set up, including using the [intera
 
 ### Creating the SD card
 
-Visit the [`raspbian-ua-netinst` page](https://github.com/mikecamilleri/raspbian-ua-netinst) on GitHub, read about the features and requirements, and download the latest release. In this tutorial I'm using [1.0.7](https://github.com/debian-pi/raspbian-ua-netinst/tree/v1.0.7). The README on GitHub has very good instructions for formatting your SD card and writing the image to it. On my Mac, I simply used the Disk Utility app included with OS X. After opening the app I selected the card, selected the _Erase_ tab, selected _MS-DOS (FAT)_ as the format, named the disk _RASPBIAN_, and clicked _Erase_. I then copied the contents of the _.zip_ version of the release to the card using Finder. There are a lot of hidden files (dotfiles) in the archive, so make sure those get copied too.
+Visit the [_raspbian-ua-netinst_ page](https://github.com/mikecamilleri/raspbian-ua-netinst) on GitHub, read about the features and requirements, and download the latest release. In this tutorial I'm using [1.0.7](https://github.com/debian-pi/raspbian-ua-netinst/tree/v1.0.7). The README on GitHub has very good instructions for formatting your SD card and writing the image to it. On my Mac, I simply used the Disk Utility app included with OS X. After opening the app I selected the card, selected the _Erase_ tab, selected _MS-DOS (FAT)_ as the format, named the disk _RASPBIAN_, and clicked _Erase_. I then copied the contents of the _.zip_ version of the release to the card using Finder. There are a lot of hidden files (dotfiles) in the archive, so make sure those get copied too.
 
 ### Customizing the installer
 
@@ -132,7 +132,7 @@ Now we reboot so the new settings become active.
 sudo shutdown -r now
 ```
 
-## A Few More Tools
+## Some More Tools
 
 That completes the headless minimal base system with networking and access via SSH. Now, I'm going to install a few things that expand on that system. Here I install some tools that I use in my development environment.
 
@@ -162,6 +162,12 @@ All that leaves is the [library for Python 3](https://www.raspberrypi.org/docume
 sudo apt-get install python3-picamera
 ```
 
+### GPIO library for Python 3
+
+```bash
+sudo apt-get install python3-rpi.gpio
+```
+
 ### Bonjour support with `avahi-daemon`
 
 After all of that logging in an out, I'm sick of typing the Raspberry Pi's IP address. Instead I want to access it using a `hostname.local` domain name like the rest of the computers on my network. What Apple calls _Bonjour_ also goes by Rendesvous (the old Apple name for the technology), Zeroconf, mDNS/DNS-SD, and several other names.
@@ -184,6 +190,6 @@ sudo apt-get clean
 
 ## That's All Folks
 
-We have installed and configured a headless minimal base Raspbian system on the Raspberry Pi complete with network access via SSH. We have also configured the camera module, and installed Python 3 and Git as a foundation for future development. Bonjour support was added as a convenience.
+We have installed and configured a headless minimal base Raspbian system on the Raspberry Pi complete with network access via SSH. We have also configured the camera module, and installed Python 3 and Git as a foundation for future development, along with Python 3 libraries to control GPIO and the camera module. Bonjour support was added as a convenience.
 
 I hope that this tutorial can help smooth over some gaps in the existing documentation and help others configure a headless minimal Raspbian system to serve as a foundation for their projects.
