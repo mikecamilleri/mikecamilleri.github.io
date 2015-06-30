@@ -16,8 +16,8 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     - Primary:        #00aef0
     - Black:          #000000  (0%)
     - Grey:           #a8a8a8  (66%)
-                     #e6e6e6  (90%)
-                     #f2f2f2  (95%)
+                      #e6e6e6  (90%)
+                      #f2f2f2  (95%)
     - White:          #ffffff  (100%)
 
     FONTS:
@@ -56,10 +56,10 @@ body {
 header { }
 
 footer {
+  border-top: 1px solid #e6e6e6;
   margin-top: 1.5em;
   margin-bottom: 9em;
   padding-top: 1.5em;
-  border-top: 1px solid #e6e6e6;
 }
 
 
@@ -78,19 +78,20 @@ address {
 /* base block elements */
 
 h1, h2, h3 {
+  /* change from default "bold" for Google Fonts */
   font-weight: 600;
 }
 
 h1 {
+  font-size: 1.5em;
   margin-top: 3.5em; /* 3 lines */
   margin-bottom: 1em; /* 1 line */
-  font-size: 1.5em;
 }
 
 h2, h3 {
+  font-size: 1em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  font-size: 1em;
 }
 
 h3 {
@@ -99,24 +100,27 @@ h3 {
 }
 
 p, pre, blockquote {
-  margin-top: 1.5;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
 ul, ol {
-  margin-top: 0;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
   padding: 0;
 }
 
-li { }
+li {
+  list-style-position: inside;
+}
 
 blockquote {
   font-style: italic;
-  margin-left: -1em;
+  border-left: 0.25em solid #e6e6e6;
+  margin-left: 0;
   margin-right: 0;
   padding-left: 0.75em;
-  border-left: 0.25em solid #e6e6e6;
+  /* l-border + l-padding = 1em */
 }
 
 blockquote cite {
@@ -129,11 +133,11 @@ blockquote cite::before {
   content: "— "
 }
 
-/* base incline elements */
+/* base inline elements */
 
 a {
-  text-decoration: none;
   color: #00aef0;
+  text-decoration: none;
   font-weight: 600;
 }
 
@@ -158,13 +162,14 @@ pre, code {
 }
 
 pre {
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-
+  /* (l/r)-margins + padding = 0 */
   margin-left: -0.75em;
   margin-right: -0.75em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  /* t-padding + b-padding = 1.5em (1 line) */
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
 }
 
 code {
@@ -173,8 +178,10 @@ code {
 }
 
 pre code {
+  /* reset styles for code already in styled pre block */
   padding: 0;
 }
+
 
 /* POST & PAGE SPECIFIC */
 
@@ -210,13 +217,20 @@ address a {
 }
 
 
-/* SMALL DEVICES */
+/* LARGE DEVICES (progressive enhancement) */
 
-@media all and (max-width: 46em) {
+@media all and (min-width: 46em) {
+
+  /* TYPOGRAPHY */
+
+  /* base block elements */
+
   li {
-    list-style-position: inside;
+    list-style-position: outside;
   }
+
   blockquote {
-    margin-left: 0;
+    margin-left: -1em;
   }
+
 }
