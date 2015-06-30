@@ -13,32 +13,33 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    --------------------------------------------------------------------------
 
     COLOR:
-    -  Primary:        #00aef0
-    -  Black:          #000000  (20%)
-    -  Grey:           #a8a8a8  (66%)
-                       #e6e6e6  (90%)
-                       #f2f2f2  (95%)
-    -  White:          #ffffff  (100%)
+    - Primary:        #00aef0
+    - Black:          #000000  (0%)
+    - Grey:           #a8a8a8  (66%)
+                     #e6e6e6  (90%)
+                     #f2f2f2  (95%)
+    - White:          #ffffff  (100%)
 
     FONTS:
-    -  Face:           Open Sans 300, 600; Ubuntu Mono 400
-    -  line-height:    1.75em
+    - Face:           Source Sans Pro: 400, 600, 400italic, 600italic
+                      Source Code Pro: 400, 600
+    - line-height:    1.5em
 
-  SCALE:
-  base font-size (%) >  0.75%  87.5%  100%   112.5%  lines               use
-                  (em)    (px)                        (x) (rem)  (em)
-  0)   0.5     = 0.5      6      7      8      9     1 = 1.75 = 3.5
-  1)   1       = 1      *12    *14    *16    *18     1 = 1.75 = 1.75    <body>
-  2)   1 + 0.5 = 1.5     18     21     24     27     1 = 1.75 = 1.1667  <h1>
-  3)   1.5 + 1 = 2.5     30     35     40     45     2 = 3.5  = 1.4
+    SCALE:
+    base font-size (%) >  0.75%  87.5%  100%   112.5%  lines               use
+                    (em)    (px)                        (x) (rem)  (em)
+    0)   0.5     = 0.5      6      7    * 8      9     1 = 1.75 = 3.5
+    1)   1       = 1       12     14    *16     18     1 = 1.75 = 1.75    <body>
+    2)   1 + 0.5 = 1.5     18     21    *24     27     1 = 1.75 = 1.1667  <h1>
+    3)   1.5 + 1 = 2.5     30     35    *40     45     2 = 3.5  = 1.4
 
    -------------------------------------------------------------------------- */
 
 /* BIG BLOCKS */
 
 body {
-  font-family: "Open Sans", serif;
-  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
   line-height: 1.5em;
   border-top: 0.5em solid #00aef0;
 }
@@ -88,7 +89,7 @@ h1 {
 
 h2, h3 {
   margin-top: 1.5em;
-  margin-bottom: 0;
+  margin-bottom: 1.5em;
   font-size: 1em;
 }
 
@@ -97,8 +98,8 @@ h3 {
   font-style: italic;
 }
 
-p, pre {
-  margin-top: 0;
+p, pre, blockquote {
+  margin-top: 1.5;
   margin-bottom: 1.5em;
 }
 
@@ -109,6 +110,24 @@ ul, ol {
 }
 
 li { }
+
+blockquote {
+  font-style: italic;
+  margin-left: -1em;
+  margin-right: 0;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #e6e6e6;
+}
+
+blockquote cite {
+  font-style: normal;
+  display: block;
+  text-align: right;
+}
+
+blockquote cite::before {
+  content: "— "
+}
 
 /* base incline elements */
 
@@ -127,7 +146,7 @@ strong, b {
 }
 
 code {
-  font-family: "Ubuntu Mono";
+  font-family: "Source Code Pro", monospace;
   font-weight: 400;
 }
 
@@ -135,21 +154,22 @@ code {
 
 pre, code {
   background-color: #f2f2f2; /* 95% */
-  border-radius: 0.5em;
+  border-radius: 0.25em;
 }
 
 pre {
-  padding: 0.75em;
-  /*
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+
   margin-left: -0.75em;
   margin-right: -0.75em;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-  */
 }
 
 code {
-  padding: 0.375em;
+  padding-left: .25em;
+  padding-right: .25em;
 }
 
 pre code {
@@ -195,5 +215,8 @@ address a {
 @media all and (max-width: 46em) {
   li {
     list-style-position: inside;
+  }
+  blockquote {
+    margin-left: 0;
   }
 }
