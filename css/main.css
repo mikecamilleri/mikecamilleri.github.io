@@ -11,26 +11,27 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 /* --------------------------------------------------------------------------
     MIKECAMILLERI.COM  /////////////////////////////////////////////////////
    --------------------------------------------------------------------------
-    
+
     COLOR:
     -  Primary:        #00aef0
     -  Black:          #000000  (20%)
     -  Grey:           #a8a8a8  (66%)
                        #e6e6e6  (90%)
+                       #f2f2f2  (95%)
     -  White:          #ffffff  (100%)
 
     FONTS:
     -  Face:           Open Sans 300, 600; Ubuntu Mono 400
     -  line-height:    1.75em
-  
+
   SCALE:
   base font-size (%) >  0.75%  87.5%  100%   112.5%  lines               use
                   (em)    (px)                        (x) (rem)  (em)
-  0)   0.5     = 0.5      6      7      8      9     1 = 1.75 = 3.5   
+  0)   0.5     = 0.5      6      7      8      9     1 = 1.75 = 3.5
   1)   1       = 1      *12    *14    *16    *18     1 = 1.75 = 1.75    <body>
   2)   1 + 0.5 = 1.5     18     21     24     27     1 = 1.75 = 1.1667  <h1>
-  3)   1.5 + 1 = 2.5     30     35     40     45     2 = 3.5  = 1.4     
-   
+  3)   1.5 + 1 = 2.5     30     35     40     45     2 = 3.5  = 1.4
+
    -------------------------------------------------------------------------- */
 
 /* BIG BLOCKS */
@@ -43,7 +44,7 @@ body {
 }
 
 .site-wrapper {
-  /* flexible on small devices, reasonable line lenght on large devices */
+  /* flexible on small devices, reasonable line length on large devices */
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5em;
@@ -130,6 +131,30 @@ code {
   font-weight: 400;
 }
 
+/* code */
+
+pre, code {
+  background-color: #f2f2f2; /* 95% */
+  border-radius: 0.5em;
+}
+
+pre {
+  padding: 0.75em;
+  /*
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  */
+}
+
+code {
+  padding: 0.375em;
+}
+
+pre code {
+  padding: 0;
+}
 
 /* POST & PAGE SPECIFIC */
 
@@ -160,15 +185,15 @@ address a {
 
 .posts li {
   list-style-type: none;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 
+/* SMALL DEVICES */
 
-
-
-
-
-
-
-
-
+@media all and (max-width: 46em) {
+  li {
+    list-style-position: inside;
+  }
+}
