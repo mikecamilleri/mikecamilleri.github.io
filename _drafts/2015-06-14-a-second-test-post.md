@@ -6,6 +6,41 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. This is **strong** text! And _these words_ are emphasized. Take a look at the source for this post to get an idea about how it works.
 
+## Alignment
+
+> We’re in such a hurry most of the time we never get much chance to talk. The result is a kind of endless day-to-day shallowness, a monotony that leaves a person wondering years later where all the time went and sorry that it’s all gone.
+
+1. One
+2. Two
+3. Three
+4. Four
+
+- First
+- Second
+- Third
+
+```
+#
+For
+One
+make
+1. sdljfdsoidf  fsdoi sddg 
+```
+
+## A Blockquote
+
+> We’re in such a hurry most of the time we never get much chance to talk. The result is a kind of endless day-to-day shallowness, a monotony that leaves a person wondering years later where all the time went and sorry that it’s all gone.
+
+> <cite>Robert M. Persig, _Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values_</cite>
+
+## A Multi-Paragraph Blockquote
+
+> We’re in such a hurry most of the time we never get much chance to talk. The result is a kind of endless day-to-day shallowness, a monotony that leaves a person wondering years later where all the time went and sorry that it’s all gone.
+
+> We’re in such a hurry most of the time we never get much chance to talk. The result is a kind of endless day-to-day shallowness, a monotony that leaves a person wondering years later where all the time went and sorry that it’s all gone. A a monotony that leaves a person wondering years later where all the time went and sorry that it’s all gone. The time a monotony that leaves a person wondering years later where all the time went and sorry that it’s all gone.
+
+> <cite>Robert M. Persig, _Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values_</cite>
+
 ## Second Level Header
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. This is **strong** text! And _these words_ are emphasized. Take a look at the source for this post to get an idea about how it works.
@@ -19,7 +54,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 1. ready
 2. set
 3. go!
-4. I win. And this needs to span multiple lines so I am amamking it long. It must be longer. 
+4. I win. And this needs to span multiple lines so I am amamking it long. It must be longer.
 
 ### The Rare `<h3>`
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. This is **strong** text! And _these words_ are emphasized. Take a look at the source for this post to get an idea about how it works.
