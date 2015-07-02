@@ -29,7 +29,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     base font-size (%) >  0.75%  87.5%  100%   112.5%  lines               use
                     (em)    (px)                        (x) (rem)  (em)
     0)   0.5     = 0.5      6      7    * 8      9     1 = 1.75 = 3.5
-    1)   1       = 1       12     14    *16     18     1 = 1.75 = 1.75    <body>
+    1)   1       = 1       12     14    *16     18     1 = 1.75 = 1.75   <body>
     2)   1 + 0.5 = 1.5     18     21    *24     27     1 = 1.75 = 1.1667  <h1>
     3)   1.5 + 1 = 2.5     30     35    *40     45     2 = 3.5  = 1.4
 
@@ -91,8 +91,7 @@ h1 {
 h2, h3 {
   font-size: 1em;
   margin-top: 1.5em;
-  /*margin-bottom: 1.5em;*/
-  margin-bottom: 0;
+  margin-bottom: 1.5em;
 }
 
 h3 {
@@ -101,20 +100,28 @@ h3 {
 }
 
 p, pre, blockquote {
-  /*margin-top: 1.5em;*/
-  margin-top: 0;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-ul, ol {
-  /*margin-top: 1.5em;*/
-  margin-top: 0;
+ul, ol, dl {
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
   padding: 0;
 }
 
 li {
   list-style-position: inside;
+}
+
+dt {
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 1.5em;
 }
 
 blockquote {
@@ -165,9 +172,6 @@ pre, code {
 }
 
 pre {
-  /* (l/r)-margins + padding = 0 */
-  margin-left: -0.75em;
-  margin-right: -0.75em;
   padding-left: 0.75em;
   padding-right: 0.75em;
   /* t-padding + b-padding = 1.5em (1 line) */
@@ -220,6 +224,15 @@ address a {
 }
 
 
+/* portfolio SPECIFIC */
+
+.posts li {
+  list-style-type: none;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+
 /* LARGE DEVICES (progressive enhancement) */
 
 @media all and (min-width: 46em) {
@@ -234,6 +247,14 @@ address a {
 
   blockquote {
     margin-left: -1em;
+  }
+
+  /* code */
+
+  pre {
+    /* (l/r)-margins + padding = 0 */
+    margin-left: -0.75em;
+    margin-right: -0.75em;
   }
 
 }
