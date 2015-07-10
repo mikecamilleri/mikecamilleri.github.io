@@ -53,6 +53,11 @@ body {
   max-width: 40em;
 }
 
+.breadcrumbs {
+  padding-top: 1em; /* + 0.5em from body border */
+  margin-bottom: 1.5em;
+}
+
 header { }
 
 footer {
@@ -84,7 +89,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 1.5em;
-  margin-top: 3.5em; /* 3 lines */
+  margin-top: 2em; /* 2 lines */
   margin-bottom: 1em; /* 1 line */
 }
 
