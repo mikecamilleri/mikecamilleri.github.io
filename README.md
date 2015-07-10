@@ -12,6 +12,6 @@ There are some things that I still want to improve upon or implement, but for no
 
 1. Add back link or breadcrumb trail to the headers of all pages except home.
 2. Expand the home page text and separate links.
-3. Refactor HTML and CSS. (Add language attribute to <html> tag).
+3. Refactor HTML and CSS. ~~(Add language attribute to <html> tag).~~
 4. Add support for licenses on blog posts (Usually CC BY-SA)
 5. Add more semantic markup (RDFa, RDFa Lite, or Microdata)
