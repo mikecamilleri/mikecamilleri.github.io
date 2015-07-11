@@ -10,11 +10,20 @@ layout: default
           <h1>{{ page.title }}</h1>
         </header>
         {{ content }}
-        <footer>
-          <address class="meta">
+        <footer class="meta">
+          <address>
             <a rel="author" href="/"><abbr title="Michael Camilleri">Mike Camilleri</abbr></a>
           </address>
-          <div class="meta">
+          <div>
             <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+          </div>
+
+          <div class="license">
+            {% if page.license %}
+            {% assign license = site.data.licenses[page.license] %}
+            <a rel="license" title="{{ license.description }}" href="{{ license.url }}">{{ license.title }}</a>
+            {% else %}
+            All rights reserved.
+            {% endif %}
           </div>
         </footer>

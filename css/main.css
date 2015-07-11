@@ -206,6 +206,10 @@ address a {
   font-weight: inherit;
 }
 
+.license {
+  margin-top: 1.5em;
+}
+
 
 /* HOME SPECIFIC */
 

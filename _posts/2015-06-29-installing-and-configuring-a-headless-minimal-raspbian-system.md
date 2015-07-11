@@ -1,6 +1,7 @@
 ---
 title: "RPi: Installing and Configuring a Headless Minimal Raspbian System"
 date: 2015-06-29
+license: cc-by-sa
 ---
 
 Now that I'm done with college degree number three, I have time to pursue some project ideas that have been accumulating. The [Raspberry Pi](https://www.raspberrypi.org) represents a pretty sweet platform for several of those projects. [Raspbian](https://www.raspbian.org) is based on Debian Linux and is the standard operating system for the Raspberry Pi. The Raspberry Pi was initially developed as an educational tool, and as such, the Raspbian image and installer provided by the [Raspberry Pi Foundation](https://www.raspberrypi.org) both result in a system with much more stuff (e.g. a full desktop environment) than I need or want for my embedded projects. The most recent official image, as of the time of writing, is a whopping 3.28 GiB.
