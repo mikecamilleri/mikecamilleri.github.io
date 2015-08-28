@@ -1,4 +1,4 @@
-/* main.css */
+ /* main.css */
 
 /**
  * The following code block is minified normalize.css. The following license
@@ -233,13 +233,7 @@ address a {
 }
 
 
-/* portfolio SPECIFIC */
-
-.posts li {
-  list-style-type: none;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-}
+/* PORTFOLIO SPECIFIC */
 
 
 /* LARGE DEVICES (progressive enhancement) */
