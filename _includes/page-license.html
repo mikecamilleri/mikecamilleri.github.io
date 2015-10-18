@@ -1,0 +1,8 @@
+<div class="license">
+  {% if page.license %}
+  {% assign license = site.data.licenses[page.license] %}
+  <a rel="license" title="{{ license.description }}" href="{{ license.url }}">{{ license.title }}</a>
+  {% else %}
+  All rights reserved.
+  {% endif %}
+</div>

@@ -1,7 +1,7 @@
  /* main.css */
 
 /**
- * The following code block is minified normalize.css. The following license
+ * The following block of code is minified normalize.css. The following license
  * notice was include with the original:
  *   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
  **/
@@ -29,7 +29,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     base font-size (%) >  0.75%  87.5%  100%   112.5%  lines               use
                     (em)    (px)                        (x) (rem)  (em)
     0)   0.5     = 0.5      6      7    * 8      9     1 = 1.75 = 3.5
-    1)   1       = 1       12     14    *16     18     1 = 1.75 = 1.75   <body>
+    1)   1       = 1       12     14    *16     18     1 = 1.75 = 1.75  <body>
     2)   1 + 0.5 = 1.5     18     21    *24     27     1 = 1.75 = 1.1667  <h1>
     3)   1.5 + 1 = 2.5     30     35    *40     45     2 = 3.5  = 1.4
 
@@ -68,7 +68,7 @@ footer {
 }
 
 
-/* TYPOGRAPHY */
+/* TYPOGRAPHY & COLORS s*/
 
 /* additional resets */
 
@@ -194,14 +194,16 @@ pre code {
   padding: 0;
 }
 
+/* meta */
 
-/* POST & PAGE SPECIFIC */
-
-.meta {
+.breadcrumbs,
+.author,
+.date,
+.license {
   color: #a8a8a8;
 }
 
-address a {
+address.author a {
   color: inherit;
   font-weight: inherit;
 }
@@ -218,22 +220,30 @@ address a {
   color: #ffffff;
 }
 
+.home header h1 {
+  margin-bottom: 0;
+}
+
+.home header p {
+  margin-top: 0;
+}
+
 .home a {
   color: inherit;
   font-weight: 600;
 }
 
 
-/* BLOG INDEX SPECIFIC */
+/* INDEX NAVIGATION LISTS */
+
+nav li {
+  list-style-type: none;
+}
 
 .posts li {
-  list-style-type: none;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
-
-
-/* PORTFOLIO SPECIFIC */
 
 
 /* LARGE DEVICES (progressive enhancement) */
