@@ -182,6 +182,7 @@ pre {
   /* t-padding + b-padding = 1.5em (1 line) */
   padding-top: 0.75em;
   padding-bottom: 0.75em;
+  overflow: scroll;
 }
 
 code {
