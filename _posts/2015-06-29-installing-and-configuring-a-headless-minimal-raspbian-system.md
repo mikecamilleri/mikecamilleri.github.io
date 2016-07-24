@@ -4,6 +4,8 @@ date: 2015-06-29
 license: cc-by-sa
 ---
 
+_**Update:** There is now an offical minimal Raspbian ditribution available [here](https://www.raspberrypi.org/downloads/raspbian/). This post is probably mostly irrelevent now, but I'm leaving it up because it may still contain some useful information._
+
 Now that I'm done with college degree number three, I have time to pursue some project ideas that have been accumulating. The [Raspberry Pi](https://www.raspberrypi.org) represents a pretty sweet platform for several of those projects. [Raspbian](https://www.raspbian.org) is based on Debian Linux and is the standard operating system for the Raspberry Pi. The Raspberry Pi was initially developed as an educational tool, and as such, the Raspbian image and installer provided by the [Raspberry Pi Foundation](https://www.raspberrypi.org) both result in a system with much more stuff (e.g. a full desktop environment) than I need or want for my embedded projects. The most recent official image, as of the time of writing, is a whopping 3.28 GiB.
 
 In this tutorial I discuss using [_Raspbian (minimal) unattended netinstaller_ (raspbian-ua-netinst)](https://github.com/debian-pi/raspbian-ua-netinst) to install a minimal Raspbian system on a headless Raspberry Pi. There are other ways to get a minimal system set up, including using the [interactive installer](https://www.raspbian.org/RaspbianInstaller) available from Raspbian, or an image that someone else has made such as [MINIBIAN](https://minibianpi.wordpress.com). My reasons for doing it this way are:
