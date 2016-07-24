@@ -1,16 +1,18 @@
-# GitHub defaults that can be overridden
-# here for reference
-# highlighter: pygments
-# github: [Repository metadata]
-# # https://help.github.com/articles/repository-metadata-on-github-pages/
-
-# GitHub defaults that can not be overridden
-# here for use while running locally
-# safe: true
+# GitHub defaults that cannot be overridden
 lsi: false
-# source: your top-level directory
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
 
-# MY SETTINGS
+# GitHub defaults that can be changed
+kramdown:
+  input: GFM
+  hard_wrap: false
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
 
 # Site settings
 title: Mike Camilleri
@@ -19,11 +21,6 @@ url: "http://mikecamilleri.com"
 # Build settings
 timezone: US/Pacific
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "CNAME"]
-
-markdown: redcarpet
-redcarpet:
-  extensions: ["smart", "tables", "no_intra_emphasis", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
-highlighter: pygments
 
 gems:
   - jekyll-redirect-from
