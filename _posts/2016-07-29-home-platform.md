@@ -6,7 +6,7 @@ license: cc-by-sa
 
 I've suddenly come into an abundance of free time. I'm taking this opportunity to finally get started on a software project that I've been planning for some time. Originally I just wanted to write a home automation platform, and this will serve that function, but I've realized that the same basic platform could do so much beyond home automation. 
 
-There are several well developed, fully functional, and open source home automation projects out there already. Home Assistant and openHAB are two of the more prominent ones, and they both look to be very good at what they do. Both allow consumers to easily integrate various proprietary and open devices into a user friendly platform that allows for both automated control and manual remote control of the attached devices. There are of course many proprietary hubs that work similarly. 
+There are several well developed, fully functional, and open source home automation projects out there already. [Home Assistant](https://home-assistant.io) and [openHAB](http://www.openhab.org) are two of the more prominent ones, and they both look to be very good at what they do. Both allow consumers to easily integrate various proprietary and open devices into a user friendly platform that allows for both automated control and manual remote control of the attached devices. There are of course many proprietary hubs that work similarly. 
 
 My goals are somewhat different. Yes, I want to create a home automation platform that integrates proprietary and homebrew devices and external data, and allows for rule-based automations. More that that though, I want to create a general purpose data and automation platform for the professional or hobbyist software developer. 
 
