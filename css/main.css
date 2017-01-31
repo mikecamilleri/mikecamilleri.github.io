@@ -13,7 +13,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
    --------------------------------------------------------------------------
 
     COLOR:
-    - Primary:        #00aef0
+    - Primary:        #ff3b3f
     - Black:          #000000  (0%)
     - Grey:           #a8a8a8  (66%)
                       #e6e6e6  (90%)
@@ -41,7 +41,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.5em;
-  border-top: 0.5em solid #00aef0;
+  border-top: 0.5em solid #ff3b3f;
 }
 
 .site-wrapper {
@@ -151,7 +151,7 @@ blockquote cite::before {
 /* base inline elements */
 
 a {
-  color: #00aef0;
+  color: #ff3b3f;
   text-decoration: none;
   font-weight: 600;
 }
@@ -217,7 +217,7 @@ address.author a {
 /* HOME SPECIFIC */
 
 .home {
-  background-color: #00aef0;
+  background-color: #ff3b3f;
   color: #ffffff;
 }
 
