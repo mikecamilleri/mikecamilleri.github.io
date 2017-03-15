@@ -20,7 +20,7 @@ During my studies at Oregon State, I came to realize quickly how much I fundamen
 
 I was fortunate to be hired by a startup here in Portland shortly after graduating with my bachelor's degree in computer science. My job title was "Integration Engineer" and my role at the company was working as part of the team that wrote the software connecting our platform with third-party services, primarily via REST APIs. Although limited in scope, that role was an ideal first position for me because I was able to use skills that I was very comfortable with every day to build high quality integrations while learning progressively more about the architecture of, and technologies used to construct our platform. 
 
-Unfortunately, I was laid off along with five other people after only eleven months with the company.
+Unfortunately, I was [laid off along with five other people](http://www.bizjournals.com/portland/blog/techflash/2016/07/as-market-solidifies-lytics-rejiggers-engineering.html) after only eleven months with the company.
 
 ## My job search thus far
 
