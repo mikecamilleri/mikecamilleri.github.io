@@ -16,7 +16,7 @@ The RethinkDB database **is** the core of the home automation platform and will 
 
 ### Modules
 
-Modules may perform the automation functions typically associated with IoT applications and also may provide interfaces for the user to interact with the system. The set of basic modules might include `web-admin` and `automaton`. Additionally there will be a module, probably called `core`, which will perform setup (i.e. reading configuration files) and housekeeping work. Each module will be represented in the database by a document in the `modules` table. Modules will listen for changes to their document via a changefeed and change settings on other components by writing to their documents. Voila! RethinkDB is now message broker!
+Modules may perform the automation functions typically associated with IoT applications and also may provide interfaces for the user to interact with the system. The set of basic modules might include `web-admin` and `automaton`. Additionally there will be a module, probably called `core`, which will perform setup (e.g. reading configuration files) and housekeeping work. Each module will be represented in the database by a document in the `modules` table. Modules will listen for changes to their document via a changefeed and change settings on other components by writing to their documents. Voila! RethinkDB is now a pub-sub message broker!
 
 ```json
 {
@@ -25,10 +25,10 @@ Modules may perform the automation functions typically associated with IoT appli
 	"prettyName": "Module Name",
 	"webAdminURL": "http://0.0.0.0:80/web-admin-interface-url-if-available",
 	"config": {
-		"arbitrary-key": "arbitrary-value-of-arbitrary-type"
+		"arbitraryKey": "arbitrary-value-of-arbitrary-type"
 	},
 	"status": {
-		"arbitrary-key": "arbitrary-value-of-arbitrary-type"
+		"arbitraryKey": "arbitrary-value-of-arbitrary-type"
 	}
 }
 ```
@@ -44,17 +44,17 @@ Gateways serve as intermediaries between devices and the core database. Gateways
 	"prettyName": "Gateway Name",
 	"webAdminURL": "http://0.0.0.0:80/web-admin-interface-url-if-available",
 	"config": {
-		"arbitrary-key": "arbitrary-value-of-arbitrary-type",
+		"arbitraryKey": "arbitrary-value-of-arbitrary-type",
 	},
 	"status": {
-		"arbitrary-key": "arbitrary-value-of-arbitrary-type"
+		"arbitraryKey": "arbitrary-value-of-arbitrary-type"
 	}
 }
 ```
 
 ### Devices
 
-Devices are things that the platform receives data from or controls. Devices may be physical such as light thermostats, light switches, or alarm sensors; or they may be virtual such as Twitter feed or 3rd party weather API. Devices will be represented by a document in the `devices` table.
+Devices are things that the platform receives data from or controls. Devices may be physical such as thermostats, light switches, or alarm sensors; or they may be virtual such as Twitter feed or 3rd party weather API. Devices will be represented by a document in the `devices` table.
 
 ```json
 {
@@ -72,11 +72,11 @@ Devices are things that the platform receives data from or controls. Devices may
 		}
 	],
 	"config": {
-		"arbitrary-key": "arbitrary-value-of-arbitrary-type",
-		"refresh-interval-seconds": 60
+		"arbitraryKey": "arbitrary-value-of-arbitrary-type",
+		"refreshIntervalSeconds": 60
 	},
 	"status": {
-		"arbitrary-key": "arbitrary-value-of-arbitrary-type"
+		"arbitraryKey": "arbitrary-value-of-arbitrary-type"
 	}
 }
 ```
@@ -101,7 +101,7 @@ That's a lot of information, so here are a few examples illustrating how this al
 
 ### Using a web interface (`web-admin` module), a user changes the setting of _Downstairs Thermostat_ to 65°F.
 
-1. The user access the appropriate page in the web interface.
+1. The user accesses the appropriate page in the web interface.
 2. The `web-admin` module reads the `thermostat-downstairs` document in the `devices` table to present the current setting to the user.
 3. The user changes the setting using the web interface.
 4. The `web-admin` module writes the update to the `thermostat-downstairs` document.
@@ -109,8 +109,8 @@ That's a lot of information, so here are a few examples illustrating how this al
 
 ### A homeowner is interested in recording exterior temperature.
 
-1. The homeowner, through one of the modules that provide an admin interface, configures an appropriate feature on an appropriate device to take temperature readings a some interval. This works similarly to the example above
-2. The gateway that the device is attached to, writes the temperature values to the `values` table at the specified intervals. 
+1. The homeowner, through one of the modules that provide an admin interface, configures an appropriate feature on an appropriate device to take temperature readings at some interval. This works similarly to the example above
+2. The gateway that the device is attached to writes the temperature values to the `values` table at the specified intervals. 
 
 ### A homeowner wants some devices in his home to enter a certain state when an alarm is triggered. 
 
@@ -130,4 +130,4 @@ That's a lot of information, so here are a few examples illustrating how this al
 
 ## A few more things
 
-One huge advantage of a microservices architecture is the ability to build the various services using the tools most appropriate for the job. This will be especially useful when building the gateways using existing libraries. The [major open source library for the Z-Wave protocol](https://github.com/OpenZWave/open-zwave) is written in C++, for example. I don't want to build this whole system in C++ so the ability to isolate that part in a microservice is great. Another positive is licensing. The complete separation of components that allows each component to be licensed separately. This is useful, for example, if I want to license most of my own code under a permissive license like the MIT or Apache licenses, but use GPL code in certain components. And, of course, microservices can live on one, or multiple machines as needed. I would like to run all of this, including the database, on a few Raspberry Pi single board computers. 
+One huge advantage of a microservices architecture is the ability to build the various services using the tools most appropriate for the job. This will be especially useful when building the gateways using existing libraries. The [major open source library for the Z-Wave protocol](https://github.com/OpenZWave/open-zwave) is written in C++, for example. I don't want to build this whole system in C++ so the ability to isolate that part in a microservice is great. Another positive is licensing. The complete separation of components allows each component to be licensed separately. This is useful, for example, if I want to license most of my own code under a permissive license like the MIT or Apache licenses, but use GPL code in certain components. And, of course, microservices can live on one, or multiple machines as needed. I would like to run all of this, including the database, on a few Raspberry Pi single board computers. 
