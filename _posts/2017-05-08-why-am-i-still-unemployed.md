@@ -10,9 +10,9 @@ After a lot of thought and discussion I believe that an unfortunate combination 
 
 ## I was laid off with eleven months of experience
 
-Software development is a second career for me. Previously I was a molecular and cellular biologist and a have a master's degree in that field. I earned my second bachelor's degree in computer science from Oregon State University during the second half of 2014 and first half of 2015 -- I completed the program in only one year. I was fortunate to be hired by a startup here in Portland shortly after graduating. I learned a lot and enjoyed my role at that company, but unfortunately I was laid off after only elven months along with five other people. 
+Software development is a second career for me. Previously I was a molecular and cellular biologist and a have a master's degree in that field. I earned my second bachelor's degree in computer science from Oregon State University during the second half of 2014 and first half of 2015 -- I completed the program in only one year. I was fortunate to be hired by a startup here in Portland shortly after graduating. I learned a lot and enjoyed my role at that company, but unfortunately I was laid off after only eleven months along with five other people. 
 
-I've realized that it is easer to find a job with no professional experience than it is with eleven months of professional experience. I feel that my skills are appropriate for somewhere between junior and mid-level positions. I'd be happy work at the junior-level, but it is very difficult to find those positions. Many companies recruit for those roles at universities, or they hire their interns.
+I've realized that it is easier to find a job with no professional experience than it is with eleven months of professional experience. I feel that my skills are appropriate for somewhere between junior and mid-level positions. I'd be happy work at the junior-level, but it is very difficult to find those positions. Many companies recruit for those roles at universities, or they hire their interns.
 
 ## The job market in Portland is difficult
 
@@ -24,7 +24,7 @@ I have been focusing my job search exclusively on companies that I want to work 
 
 ## Some people see what I have to offer
 
-On a few occasions during these ten months, I have come very close to being hired. One position that stands out was at one of the larger companies here in Portland. I am reluctant to go into so much detail that I might reveal which company, but, essentially, it would have been an ideal role for me because in it I would have been able to build upon my existing knowledge and continuously learn while working on an established, but exciting product. After an hour long video conference interview and a four hour in person interview I was told that they would like to make me an offer, but the budget for the position had been moved to another office.
+On a few occasions during these ten months, I have come very close to being hired, but internal issues -- i.e. positions being closed without hiring -- have prevented me. 
 
 ## Something has to change
 
