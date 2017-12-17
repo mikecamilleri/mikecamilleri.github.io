@@ -18,7 +18,7 @@ In this tutorial I discuss using [_Raspbian (minimal) unattended netinstaller_ (
 
 ### Creating the SD card
 
-Visit the [_raspbian-ua-netinst_ page](https://github.com/mikecamilleri/raspbian-ua-netinst) on GitHub, read about the features and requirements, and download the latest release. In this tutorial I'm using [1.0.7](https://github.com/debian-pi/raspbian-ua-netinst/tree/v1.0.7). The README on GitHub has very good instructions for formatting your SD card and writing the image to it. On my Mac, I simply used the Disk Utility app included with OS X. After opening the app I selected the card, selected the _Erase_ tab, selected _MS-DOS (FAT)_ as the format, named the disk _RASPBIAN_, and clicked _Erase_. I then copied the contents of the _.zip_ version of the release to the card using Finder. There are a lot of hidden files (dotfiles) in the archive, so make sure those get copied too.
+Visit the [_raspbian-ua-netinst_ page](https://github.com/debian-pi/raspbian-ua-netinst) on GitHub, read about the features and requirements, and download the latest release. In this tutorial I'm using [1.0.7](https://github.com/debian-pi/raspbian-ua-netinst/tree/v1.0.7). The README on GitHub has very good instructions for formatting your SD card and writing the image to it. On my Mac, I simply used the Disk Utility app included with OS X. After opening the app I selected the card, selected the _Erase_ tab, selected _MS-DOS (FAT)_ as the format, named the disk _RASPBIAN_, and clicked _Erase_. I then copied the contents of the _.zip_ version of the release to the card using Finder. There are a lot of hidden files (dotfiles) in the archive, so make sure those get copied too.
 
 ### Customizing the installer
 
