@@ -16,7 +16,7 @@ gems:
 
 # Site settings
 title: Mike Camilleri
-url: "http://mikecamilleri.com"
+url: "https://mikecamilleri.com"
 
 # Build settings
 timezone: US/Pacific
