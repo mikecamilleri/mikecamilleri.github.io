@@ -200,6 +200,10 @@ pre code {
   color: #a8a8a8;
 }
 
+.date {
+  white-space: nowrap;
+}
+
 address.author a {
   color: inherit;
   font-weight: inherit;
