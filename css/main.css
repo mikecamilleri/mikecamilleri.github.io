@@ -22,17 +22,16 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
     FONTS:
     - Face:           IBM Plex Sans:  400, 700, 400italic, 700italic
-                      IBM Plex Serif: 400, 700, 400italic, 700italic
                       IBM Plex Mono:  400, 700, 400italic, 700italic
     - line-height:    1.5em
 
     SCALE:
     base font-size (%) >  0.75%  87.5%  100%   112.5%  lines               use
-                    (em)    (px)                        (x) (rem)  (em)
-    0)   0.5     = 0.5      6      7    * 8      9     1 = 1.75 = 3.5
-    1)   1       = 1       12     14    *16     18     1 = 1.75 = 1.75  <body>
-    2)   1 + 0.5 = 1.5     18     21    *24     27     1 = 1.75 = 1.1667  <h1>
-    3)   1.5 + 1 = 2.5     30     35    *40     45     2 = 3.5  = 1.4
+                   (em)    (px)                        (x) (rem)  (em)
+    0)   0.5     = 0.5       6      7   * 8      9     1 = 1.75 = 3.5
+    1)   1       = 1        12     14   *16     18     1 = 1.75 = 1.75  <body>
+    2)   1 + 0.5 = 1.5      18     21   *24     27     1 = 1.75 = 1.1667  <h1>
+    3)   1.5 + 1 = 2.5      30     35   *40     45     2 = 3.5  = 1.4
 
    -------------------------------------------------------------------------- */
 
@@ -40,7 +39,6 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
   line-height: 1.5em;
   border-top: 0.5em solid #076678;
 }
@@ -83,15 +81,14 @@ address {
 
 /* base block elements */
 
-h1, h2, h3 {
-  /* change from default "bold" for Google Fonts */
-  font-weight: 700;
-}
-
 h1 {
   font-size: 1.5em;
   margin-top: 2em; /* 2 lines */
   margin-bottom: 1em; /* 1 line */
+}
+
+h1, h2 { 
+  font-weight: bold;
 }
 
 h2, h3 {
@@ -121,7 +118,7 @@ li {
 }
 
 dt {
-  font-weight: 700;
+  font-weight: bold;
   margin-top: 1.5em;
 }
 
@@ -154,7 +151,7 @@ blockquote cite::before {
 a {
   color: #076678;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 a:hover, a:active {
@@ -162,12 +159,10 @@ a:hover, a:active {
 }
 
 strong, b {
-  font-weight: 700;
+  font-weight: bold;
 }
 
-code {
-  font-weight: 400;
-}
+code { }
 
 /* code */
 
@@ -232,7 +227,7 @@ address.author a {
 
 .home a {
   color: inherit;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 
