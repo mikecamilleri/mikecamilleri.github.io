@@ -21,8 +21,9 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
     - White:          #ffffff  (100%)
 
     FONTS:
-    - Face:           Source Sans Pro: 400, 600, 400italic, 600italic
-                      Source Code Pro: 400, 600
+    - Face:           IBM Plex Sans:  400, 700, 400italic, 700italic
+                      IBM Plex Serif: 400, 700, 400italic, 700italic
+                      IBM Plex Mono:  400, 700, 400italic, 700italic
     - line-height:    1.5em
 
     SCALE:
@@ -38,7 +39,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 /* BIG BLOCKS */
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   line-height: 1.5em;
   border-top: 0.5em solid #076678;
@@ -84,7 +85,7 @@ address {
 
 h1, h2, h3 {
   /* change from default "bold" for Google Fonts */
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h1 {
@@ -120,7 +121,7 @@ li {
 }
 
 dt {
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 1.5em;
 }
 
@@ -153,7 +154,7 @@ blockquote cite::before {
 a {
   color: #076678;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a:hover, a:active {
@@ -161,7 +162,7 @@ a:hover, a:active {
 }
 
 strong, b {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 code {
@@ -173,7 +174,7 @@ code {
 pre, code {
   background-color: #f2f2f2; /* 95% */
   border-radius: 0.25em;
-  font-family: "Source Code Pro", monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 pre {
@@ -231,7 +232,7 @@ address.author a {
 
 .home a {
   color: inherit;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 
