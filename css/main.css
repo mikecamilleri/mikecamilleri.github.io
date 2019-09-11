@@ -38,7 +38,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 /* BIG BLOCKS */
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5em;
   border-top: 0.5em solid #076678;
 }
@@ -169,7 +169,7 @@ code { }
 pre, code {
   background-color: #f2f2f2; /* 95% */
   border-radius: 0.25em;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace;
 }
 
 pre {
