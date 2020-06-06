@@ -13,7 +13,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
    --------------------------------------------------------------------------
 
     COLOR:
-    - Primary:        #076678  borrowed from https://github.com/morhetz/gruvbox
+    - Primary:        #2aa198  
     - Black:          #000000  (0%)
     - Grey:           #a8a8a8  (66%)
                       #e6e6e6  (90%)
@@ -40,7 +40,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 body {
   font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5em;
-  border-top: 0.5em solid #076678;
+  border-top: 0.5em solid #2aa198;
 }
 
 .site-wrapper {
@@ -149,7 +149,7 @@ blockquote cite::before {
 /* base inline elements */
 
 a {
-  color: #076678;
+  color: #2aa198;
   text-decoration: none;
   font-weight: bold;
 }
@@ -217,7 +217,7 @@ address.author a {
 /* HOME SPECIFIC */
 
 .home {
-  background-color: #076678;
+  background-color: #2aa198;
   color: #ffffff;
 }
 
