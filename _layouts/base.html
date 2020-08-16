@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <meta name="generator" content="Jekyll {{ jekyll.version }}">
-    <link rel="stylesheet" href="{{ "/css/main.css" }}">
-    <link rel="stylesheet" href="{{ "/css/fonts.css" }}">
-  </head>
-  {{ content }}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% endif %}
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta name="generator" content="Jekyll {{ jekyll.version }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" }}">
+  <link rel="stylesheet" href="{{ "/css/fonts.css" }}">
+</head>
+{{ content }}
+
 </html>
