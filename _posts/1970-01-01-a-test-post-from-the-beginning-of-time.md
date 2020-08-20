@@ -16,9 +16,9 @@ The lowest level of heading that may be used is `<h3>`. Two levels should be eno
 
 ## Inline Features
 
-**Bold** and _Italic_ text are supported. Although `*` and `_` are interchangeable in Markdown, I always use `**` for **bold** and `_` for _italic_. [Hyperlinks](https://mikecamilleri.com) are supported. Emoji are fun 🤪 and shouldn't affect line height! I won't demonstrate images here, but the basic syntax is `![alt text](url)`. Backticks (`\``)are used for `code`. `\` can be used to escape \*\*special\*\* characters. 
+**Bold** and _Italic_ text are supported. Although `*` and `_` are interchangeable in Markdown, I always use `**` for **bold** and `_` for _italic_. [Hyperlinks](https://mikecamilleri.com) are supported. Emoji are fun 🤪 and shouldn't affect line height! I won't demonstrate images here, but the basic syntax is `![alt text](url)`. Backticks are used for `code`. `\` can be used to escape \*\*special\*\* characters. 
 
-"Quotes" and apostrophies such as in the word _it's_ should be converted to the so-called "smart" versions--em-dashes should work too!
+"Quotes" and apostrophies such as in the word _it's_ should be converted to the so-called "smart" versions---em-dashes should work too and require three dashes (`---`).
 
 ## Block Features
 
@@ -30,18 +30,18 @@ Two separate quotes with citations:
 
 > I must die, must I? If at once, then I am dying: if soon, I dine now, as it is time for dinner, and afterwards when the time comes I will die. 
 > 
-> --Epictetus, _Discourses_
+> ---Epictetus, _Discourses_
 
 > Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are already naked. There is no reason not to follow your heart.
 > 
-> --Steve Jobs
+> ---Steve Jobs
 
-A poem:
+A poem requires two spaces after each line:
 
-> this should be
-> on four lines
-> like a poem
-> fingers crossed
+> this should be  
+> on four lines  
+> like a poem  
+> fingers crossed  
 
 And a multi-paragraph quote with citation:
 
@@ -49,7 +49,7 @@ And a multi-paragraph quote with citation:
 >
 > I wanted to live deep and suck out all the marrow of life, to live so sturdily and Spartan-like as to put to rout all that was not life, to cut a broad swath and shave close, to drive life into a corner, and reduce it to its lowest terms.
 >
-> --Thoreau, _Walden_
+> ---Thoreau, _Walden_
 
 It may be better to just do these using HTML instead of relying on Markdown parsing. Even with plain HTML, there seems to be little concensus on how to handle the citations or even how the `<cite>` tag should be used. `<p class="citation">` might be the best option. 
 
