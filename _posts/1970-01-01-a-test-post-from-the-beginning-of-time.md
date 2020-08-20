@@ -4,7 +4,7 @@ date: 1970-01-01
 license: cc-by-sa
 ---
 
-This is a test post intended to incorporate all of the [GitHub Flavored Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) that I may use in blog posts here.
+This is a test post intended to incorporate all of the [GitHub Flavored Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) that I may use in blog posts here. Parsed using Kramdown with GFM support.
 
 ## Headings (`<h2>`)
 
@@ -16,7 +16,7 @@ The lowest level of heading that may be used is `<h3>`. Two levels should be eno
 
 ## Inline Features
 
-**Bold** and _Italic_ text are supported. Although `*` and `_` are interchangeable in Markdown, I always use `**` for **bold** and `_` for _italic_. [Hyperlinks](https://mikecamilleri.com) are supported. I won't demonstrate images here, but the basic syntax is `![alt text](url)`. Back-ticks are used for `code`. `\` can be used to escape \*\*special\*\* characters. 
+**Bold** and _Italic_ text are supported. Although `*` and `_` are interchangeable in Markdown, I always use `**` for **bold** and `_` for _italic_. [Hyperlinks](https://mikecamilleri.com) are supported. Emoji are fun 🤪 and shouldn't affect line height! I won't demonstrate images here, but the basic syntax is `![alt text](url)`. Backticks (`\``)are used for `code`. `\` can be used to escape \*\*special\*\* characters. 
 
 "Quotes" and apostrophies such as in the word _it's_ should be converted to the so-called "smart" versions--em-dashes should work too!
 
@@ -26,7 +26,7 @@ The lowest level of heading that may be used is `<h3>`. Two levels should be eno
 
 Blockquotes with citations are a mess in both Markdown and HTML. This needs to be worked on. 
 
-One quote following another...
+Two separate quotes with citations:
 
 > I must die, must I? If at once, then I am dying: if soon, I dine now, as it is time for dinner, and afterwards when the time comes I will die. 
 > 
@@ -36,42 +36,40 @@ One quote following another...
 > 
 > --Steve Jobs
 
-A poem...
+A poem:
 
 > this should be
 > on four lines
 > like a poem
 > fingers crossed
 
-And a multi-paragraph quote with citation...
+And a multi-paragraph quote with citation:
 
->I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived...
+>I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.
 >
-> ...I wanted to live deep and suck out all the marrow of life, to live so sturdily and Spartan-like as to put to rout all that was not life, to cut a broad swath and shave close, to drive life into a corner, and reduce it to its lowest terms...
+> I wanted to live deep and suck out all the marrow of life, to live so sturdily and Spartan-like as to put to rout all that was not life, to cut a broad swath and shave close, to drive life into a corner, and reduce it to its lowest terms.
 >
 > --Thoreau, _Walden_
 
+It may be better to just do these using HTML instead of relying on Markdown parsing. Even with plain HTML, there seems to be little concensus on how to handle the citations or even how the `<cite>` tag should be used. `<p class="citation">` might be the best option. 
+
 ### Lists
 
-An ordered list with nested unordered list...
+An ordered list:
 
-1. one
-2. two
-   - a
-   - b
-3. three
+1. the first thing
+2. the second thing
+3. the third thing
 
-An unordered list with nested ordered list...
+An unordered list:
 
-- a
-- b
-  1. one
-  2. two
-- c
+- a thing
+- b thing
+- c thing
 
 ### Code Blocks
 
-Code blocks support syntax highlighting. This is in Go...
+Code blocks support syntax highlighting. This is in Go:
 
 ```go
 package main
