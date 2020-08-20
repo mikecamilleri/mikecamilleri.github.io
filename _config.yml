@@ -23,7 +23,6 @@ title: Mike Camilleri
 url: "https://mikecamilleri.com"
 
 # Build settings
-markdown: GFM
 timezone: America/New_York
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "CNAME"]
 
