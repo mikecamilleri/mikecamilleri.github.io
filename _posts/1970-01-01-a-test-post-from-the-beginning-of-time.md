@@ -26,32 +26,16 @@ The lowest level of heading that may be used is `<h3>`. Two levels should be eno
 
 Blockquotes with citations are a mess in both Markdown and HTML. This needs to be worked on. 
 
-Two separate quotes with citations:
+A multi-paragraph blockquote with citation:
 
-> I must die, must I? If at once, then I am dying: if soon, I dine now, as it is time for dinner, and afterwards when the time comes I will die. 
-> 
-> ---Epictetus, _Discourses_
-
-> Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are already naked. There is no reason not to follow your heart.
-> 
-> ---Steve Jobs
-
-A poem requires two spaces after each line:
-
-> this should be  
-> on four lines  
-> like a poem  
-> fingers crossed  
-
-And a multi-paragraph quote with citation:
-
->I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.
+<figure>
+> I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.
 >
 > I wanted to live deep and suck out all the marrow of life, to live so sturdily and Spartan-like as to put to rout all that was not life, to cut a broad swath and shave close, to drive life into a corner, and reduce it to its lowest terms.
->
-> ---Thoreau, _Walden_
-
-It may be better to just do these using HTML instead of relying on Markdown parsing. Even with plain HTML, there seems to be little concensus on how to handle the citations or even how the `<cite>` tag should be used. `<p class="citation">` might be the best option. 
+<figcaption>
+---Thoreau, _Walden_
+</figcaption>
+</figure>
 
 ### Lists
 
