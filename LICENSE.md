@@ -1,3 +1,9 @@
+# License
+
+mikecamilleri.com content, original design, and original source code are Copyright (c) Michael P. Camilleri. All rights reserved.
+
+## HTML5 Boilerplate v9.0.0 was used under the following license:
+
 Copyright (c) HTML5 Boilerplate
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
