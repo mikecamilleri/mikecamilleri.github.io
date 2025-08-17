@@ -1,5 +1,5 @@
 /****
-   RESETS & FIXES
+    RESETS & FIXES
 ****/
 
 /* use border-box */
@@ -7,15 +7,15 @@
     box-sizing: border-box;
 }
 
-/* reset margin/padding */
+/* reset margin & padding */
 * {
     margin: 0;
     padding: 0;
 }
 
 /* 
-   prevent text size adjustment on device rotate 
-   - https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
+    prevent text size adjustment on device rotate 
+    - https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
 */
 html {
     -moz-text-size-adjust: none;
@@ -49,30 +49,29 @@ img, picture, video, canvas, svg {
 }
 
 /****
-   PAGE LAYOUT, COLOR & TYPOGRAPHY
+    PAGE LAYOUT, COLOR & TYPOGRAPHY
 ****/
 
 body {
+    max-width: 43rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #638054;
     color: #ffffff;
     font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.5rem;
 }
 
-#page-container {
-    max-width: 43rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#page-header, #page-content, #page-footer {
+body > header,
+body > main,
+body > footer {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
-#page-content .quote {
+main .quote {
     font-family: "IBM Plex", serif;
 }
 
@@ -87,72 +86,67 @@ a:hover, a:active {
 }
 
 /****
-   PAGE HEADER LAYOUT & TYPOGRAPHY
+    PAGE HEADER
 ****/
 
-#page-header h1 {
-    font-weight: bold;
+body > header h1 {
+    padding-top: 0.5rem;
     font-size: 2rem;
     line-height: 2rem;
-    padding-top: 0.5rem;
+    font-weight: bold;
 }
 
 /****
-   PAGE CONTENT LAYOUT & TYPOGRAPHY
+    PAGE CONTENT (MAIN)
 ****/
 
-#page-content p {
+body > main h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+body > main p {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
 
-#page-content .quote {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-#page-content .quote blockquote {
+body > main .quote blockquote {
     font-style: italic;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
 }
 
-#page-content .poem .stanza {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-#page-content .poem .stanza .line {
+body > main .poem .stanza .line {
     display: block;
-    margin-left: 1.5rem;
+    padding-left: 1.5rem;
     text-indent: -1.5rem;
 }
 
-#page-content .quote .citation p::before {
+body > main .quote .citation p::before {
     content: "—";
 }
 
-#page-content .quote .citation p {
-    margin-left: 3rem;
-    text-indent: -1.5rem;
+body > main .quote .citation p {
+    padding-left: 3.5rem;
+    text-indent: -2rem;
 }
 
-#page-content address {
+body > main address {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     font-style: normal;
 }
 
 /* large devices (progressive enhancement) */
 @media all and (min-width: 33em) {
-    #page-content .quote {
-        margin-left: 1.5rem;
+    body > main .quote {
+        padding-left: 1.5rem;
     }
 }
 
 /****
-   PAGE FOOTER LAYOUT & TYPOGRAPHY
+    PAGE FOOTER
 ****/
 
-#page-footer {
+body > footer {
     opacity: 0.25;
     text-align: right;
 }
