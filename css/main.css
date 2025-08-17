@@ -14,7 +14,7 @@
 }
 
 /* 
-    prevent text size adjustment on device rotate 
+    prevent text size adjustment on device rotate
     - https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
 */
 html {
@@ -58,7 +58,7 @@ body {
     padding-right: 1.5rem;
     margin-left: auto;
     margin-right: auto;
-    background-color: #638054;
+    background-color: #759763;
     color: #ffffff;
     font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.5rem;
